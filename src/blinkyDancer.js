@@ -19,6 +19,9 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
     // other effects you can use on a jQuery-wrapped html tag.
     instanceThis.$node.toggle(500);
   };
+
+  this.step.callCount = 0;
+
   // console.log(this, '5 makeBlinkyDancer');
   makeDancer.call(this, top, left, timeBetweenSteps);
 };
