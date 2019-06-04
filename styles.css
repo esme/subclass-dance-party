@@ -6,7 +6,8 @@
 
 body{
   margin: 0px;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
   /* padding: 30px;
   background-color: #222; */
 }
@@ -49,13 +50,31 @@ body{
 .topbar{
 }
 
-.title{
-
-}
 .dancer{
   /* border:10px solid red;
   border-radius:10px; */
-  height:50px; 
-  position:absolute;
-  content: url("penguin.png")
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  content: url("penguin.png");
+  top: -10%;
+  left: -50%;
+}
+
+.bouncyDancer{
+  content: url("penguin.png");
+}
+
+.blinkyDancer{
+  content: url("penguin.png");
+}
+
+.dancerfix{
+  /* position: absolute; */
+  background: #fff;
+  position: absolute;
+  height: 40px;
+  width: 25px;
+  margin: 0 10px;
+  border-radius: 50%;
 }

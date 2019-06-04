@@ -4,8 +4,10 @@ var makeBouncyDancer = function(top, left, timeBetweenSteps) {
   var oldStep = this.step;
 
   this.step = function() {
+    this.timeBetweenSteps = timeBetweenSteps;
     oldStep.call(instanceThis);
-    doBounce($(instanceThis.$node), 3, '30px', 500);
+    this.$node = $('<span class="dancerfix"><span class="dancer bouncyDancer"></span></span>');
+    doBounce(this.$node, 3, '30px', 500);
   };
 
   makeDancer.call(this, top, left, timeBetweenSteps);
