@@ -1,27 +1,61 @@
-body, html{
-  height:100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body{
   margin: 0px;
-  background-color:#444;
   font-size: 18px;
+  /* padding: 30px;
+  background-color: #222; */
 }
-body, a:link, a:visited, a:active{
-  color: lightblue;
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom, rgba(255, 0, 0, 0.2), rgba(255, 255, 0, 0.2)), 
+    url(./danceclub.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
-.title, .addDancerButton{
+
+.title {
+  text-decoration: none;
   padding:5px 12px;
-  float:right;
+  margin: 10px 10px;
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 0.5);
+  float: right;
 }
+
+.addDancerButton:link, 
+.addDancerButton:visited{
+  text-decoration: none;
+  padding:5px 12px;
+  margin: 10px 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  float: right;
+} 
+
+.addDancerButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
 .topbar{
-  height:32px;
-  background-color: #555;
 }
+
 .title{
-  background-color: #777;
+
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  /* border:10px solid red;
+  border-radius:10px; */
+  height:50px; 
   position:absolute;
+  content: url("penguin.png")
 }
