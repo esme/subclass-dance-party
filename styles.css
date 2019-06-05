@@ -31,6 +31,8 @@ body{
   float: right;
 }
 
+.lineUpButton:link,
+.lineUpButton:visited,
 .addDancerButton:link, 
 .addDancerButton:visited{
   text-decoration: none;
@@ -42,6 +44,7 @@ body{
   float: right;
 } 
 
+.lineUpButton:hover,
 .addDancerButton:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,.2);
@@ -53,8 +56,8 @@ body{
 .dancer{
   /* border:10px solid red;
   border-radius:10px; */
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   position: absolute;
   content: url("penguin.png");
   top: -10%;
@@ -66,15 +69,15 @@ body{
 }
 
 .blinkyDancer{
-  content: url("penguin.png");
+  content: url("giraffe.png");
 }
 
 .dancerfix{
   /* position: absolute; */
   background: #fff;
   position: absolute;
-  height: 40px;
-  width: 25px;
+  height: 65px;
+  width: 40px;
   margin: 0 10px;
   border-radius: 50%;
 }

@@ -32,17 +32,3 @@ describe('blinkyDancer', function() {
     });
   });
 });
-
-describe('makeDancer functionality', function() {
-
-  // verifyClass(blinkyDancer).followsPattern('pseudoclassical', {}, false);
-
-  beforeEach(function() {
-    dancer = new makeDancer();
-  });
-
-  it('should have a `step` property that is a function', function() {
-    expect(typeof dancer.step).to.equal('function');
-  });
-
-});
