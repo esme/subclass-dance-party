@@ -15,8 +15,32 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
     context.$node.toggle();
   };
 
-  this.$node = $('<span class="dancer blinkyDancer"></span>');
+  this.$node = $('<span class="dancer"><img class="blinkyDancer" src="./giraffe.png"></img></span>');
   makeDancer.call(this, top, left, timeBetweenSteps);
+
+  var node = this.$node;
+  node.on('mouseover', function(event) {
+    node.append("<p>Moo</p>");
+    setTimeout(function() {
+      node.children().last().remove()
+    }, 2000)
+  });
+  var rotate = false;
+  node.on('click', function(event) {
+    if(!rotate) {
+      node.css({
+        "transform": "rotate(180deg)",
+        "transition" : "transform 150ms ease"
+      });
+      rotate = true;
+    } else {
+      node.css({
+        "transform": "rotate(-360deg)",
+        "transition" : "transform 150ms ease"
+      });
+      rotate = false;
+    }
+  })
 };
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);

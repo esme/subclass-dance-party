@@ -14,9 +14,8 @@ body{
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(
-    to right bottom, rgba(255, 0, 0, 0.2), rgba(255, 255, 0, 0.2)), 
-    url(./danceclub.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 68, 255, 0.041)), 
+    url(./jungle.png);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -54,22 +53,26 @@ body{
 }
 
 .dancer{
-  /* border:10px solid red;
-  border-radius:10px; */
+  position: absolute;
   height: 80px;
   width: 80px;
-  position: absolute;
-  content: url("penguin.png");
+}
+
+.bouncyDancer, .blinkyDancer{
   top: -10%;
   left: -50%;
 }
 
-.bouncyDancer{
-  content: url("penguin.png");
+img{
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 80px;
+  display: block;
 }
 
-.blinkyDancer{
-  content: url("giraffe.png");
+img:hover{
+  cursor: pointer;
 }
 
 .dancerfix{
@@ -80,4 +83,11 @@ body{
   width: 40px;
   margin: 0 10px;
   border-radius: 50%;
+}
+
+.dancer p{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: -100%;
 }

@@ -32,10 +32,5 @@ $(document).ready(function() {
 
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
-    console.log(window.dancers);
   });
-});
-
-$('.blinkyDancer').on('mouseover', function(event) {
-  console.log('clicked');
 });
